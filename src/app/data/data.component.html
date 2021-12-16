@@ -1,17 +1,61 @@
 <div class='data'>
 
   <div class="row">
+    <div class="left-column"><label>Количество километров</label></div>
+    <div class="right-column"><input type='number' #distance (input)='getDistance(distance.value)'></div>
+  </div>
+
+  <div class="row">
+    <div class="left-column"><label>Возраст</label></div>
+    <div class="right-column"><input type='number' #age (input)='getAge(age.value)'></div>
+  </div>
+
+  <div class="row">
+    <div class="left-column"><label>Вес багажа</label></div>
+    <div class="right-column"><input type='number' #baggage (input)='getBaggage(baggage.value)'>
+    </div>
+  </div>
+</div>
+
+<button class='button' (click)="getPrice()"> Рассчитать </button>
+
+<!-- <form [formGroup]="data" (submit)="onSubmit()">
+  <div class="row">
     <div class="left-column"><label for="distance">Количество километров</label></div>
-    <div class="right-column"><input name="distance"></div>
+    <div class="right-column"><input type="number" id="distance" formControlDistance="distance" /></div>
   </div>
 
   <div class="row">
     <div class="left-column"><label for="age">Возраст</label></div>
-    <div class="right-column"><input name="age"></div>
+    <div class="right-column"><input type="number" id="age" formControlAge="age" /></div>
   </div>
 
   <div class="row">
-    <div class="left-column"><label for="baggage">Вес багажа</label></div>
-    <div class="right-column"><input name="baggage"></div>
+    <div class="left-column"><label for="baggage">Количество километров</label></div>
+    <div class="right-column"><input type="number" id="baggage" formControlBaggage="baggage" /></div>
+  </div> -->
+
+<!-- <form [formGroup]='userData' (submit)='onSubmit()'>
+  <div class=" row">
+    <div class="left-column"><label for="distance">Количество километров</label></div>
+    <div class="right-column"><input type="number" id="distance" formControlName="distance" /></div>
   </div>
-</div>
+
+  <div class="row">
+    <div class="left-column"><label for="age">Возраст</label></div>
+    <div class="right-column"><input type="number" id="age" formControlName="age" /></div>
+  </div>
+
+  <div class="row">
+    <div class="left-column"><label for="baggage">Количество километров</label></div>
+    <div class="right-column"><input type="number" id="baggage" formControlName="baggage" /></div>
+  </div>
+
+  <button type="submit" class='button'>
+    <span class='title-button'>Рассчитать!!!!</span>
+  </button>
+</form>
+
+<div>
+  {{userData.value | json}}
+</div> -->

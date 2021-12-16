@@ -1,4 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+export interface Data {
+  distance: number;
+  age: number;
+  baggage: number;
+}
+
 
 @Component({
   selector: 'app-transporters',
@@ -12,4 +19,6 @@ export class TransportersComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  @Input()
+  dataUser: Data[] = [];
 }
