@@ -1,0 +1,13 @@
+button{
+  width: 100%;
+  border: none;
+  border-radius: 2px;
+  background:#0097a7;
+  color:#fff;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+}

@@ -1,0 +1,27 @@
+table {
+  width: 100%; /* Ширина таблицы */
+  /* border: 1px solid rgb(220, 220, 220); Рамка вокруг таблицы */
+  color: white; /* Цвет текста */
+margin-top: 15px;
+ }
+td, th {
+  /* text-align: center; Выравнивание по центру */
+  padding: 8px; /* Поля вокруг текста */
+  border: 1px solid rgb(220, 220, 220);
+ }
+th {
+  color: white; /* Цвет текста */
+}
+ 
+.lc { /* Стиль для первой колонки */
+  text-align: left; /* Выравнивание по левому краю */
+  color:black; /* Цвет текста */
+ }
+.title,
+.options {
+   font-weight: bold;
+   color:black;
+ }
+.title {
+background: rgb(245, 245, 245); /* Цвет фона */
+}

@@ -1,0 +1,35 @@
+.data {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  place-content: space-between;
+	margin: 10px 0;
+}
+
+.left-column {
+/* 	display: inline-block; */
+  display: flex;
+	width: 400px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.right-column {
+	display: flex;
+  width: 100%;
+  margin-right: 0px;
+  border: 1px solid rgb(220, 220, 220);
+}
+
+input{
+/*   display: block; */
+  width: 100%;
+  border: 0;
+  outline: none;
+}
