@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
+import { DataService } from '../data/data.service';
 
 @Component({
   selector: 'app-data',
@@ -9,24 +10,26 @@ import { FormGroup, FormBuilder } from '@angular/forms';
 
 export class DataComponent {
 
-  distance = '';
-  age = '';
-  baggage = '';
+  dataUser: DataService = {
+    distance: '',
+    age: '',
+    baggage: ''
+  }
 
   constructor() {
 
   }
 
   getDistance(value: string) {
-    this.distance = value;
+    this.dataUser.distance = value;
   }
 
   getAge(value: string) {
-    this.age = value;
+    this.dataUser.age = value;
   }
 
   getBaggage(value: string) {
-    this.baggage = value;
+    this.dataUser.baggage = value;
   }
 
 

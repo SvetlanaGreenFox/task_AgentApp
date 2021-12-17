@@ -4,25 +4,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DataComponent } from './data/data.component';
+import { DataComponent } from './dataUser/data.component';
 import { ButtonComponent } from './button/button.component';
 import { TransportersComponent } from './transporters/transporters.component';
-import { DatauserComponent } from './datauser/datauser.component';
+import { DataService } from './data/data.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     DataComponent,
     ButtonComponent,
-    TransportersComponent,
-    DatauserComponent
+    TransportersComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
