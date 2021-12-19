@@ -44,38 +44,30 @@ export class TransportersComponent implements OnInit {
       .pipe(takeUntil(this.isDestroyed$))
       .subscribe((data: number) => {
         this.aeroflotEconom = data;
-        console.log(this.aeroflotEconom);
       });
     this.aeroHigh.data$
       .pipe(takeUntil(this.isDestroyed$))
       .subscribe((data: number) => {
-        console.log(data);
         this.aeroflotHigh = data;
-        console.log(this.aeroflotHigh)
       });
     this.aeroLux.data$
       .pipe(takeUntil(this.isDestroyed$))
       .subscribe((data: number) => {
-        console.log(data);
         this.aeroflotLux = data;
-        console.log(this.aeroflotLux);
       });
     this.rgdEconomy.data$
       .pipe(takeUntil(this.isDestroyed$))
       .subscribe((data: number) => {
-        console.log(data);
         this.rgdClassEconomy = data;
       });
     this.rgdHigh.data$
       .pipe(takeUntil(this.isDestroyed$))
       .subscribe((data: number) => {
-        console.log(data);
         this.rgdClassHigh = data;
       });
     this.rgdLux.data$
       .pipe(takeUntil(this.isDestroyed$))
       .subscribe((data: number) => {
-        console.log(data);
         this.rgdClassLux = data;
       })
   }

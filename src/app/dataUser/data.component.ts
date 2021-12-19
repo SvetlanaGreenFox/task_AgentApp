@@ -52,6 +52,7 @@ export class DataComponent {
     this.rgdEconomy.sendData(this.dataUser);
     this.rgdHigh.sendData(this.dataUser);
     this.rgdLux.sendData(this.dataUser);
+    console.log('Data' + this.dataUser);
   }
 
 }

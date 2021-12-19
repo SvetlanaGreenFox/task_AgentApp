@@ -4,24 +4,24 @@
     <td class="title">Аэрофлот</td>
   </tr>
   <tr>
-    <td class="lc">Эконом: <span *ngIf="aeroflotEconom" class="price">{{aeroflotEconom}} &#8381;</span></td>
+    <td class="lc price" *ngIf="aeroflotEconom">Эконом: {{aeroflotEconom}} &#8381;</td>
   </tr>
   <tr>
-    <td class="lc">Продвинутый: <span *ngIf="aeroflotHigh">{{aeroflotHigh}} &#8381;</span></td>
+    <td class="lc price" *ngIf="aeroflotHigh">Продвинутый: {{aeroflotHigh}} &#8381;</td>
   </tr>
   <tr>
-    <td class="lc">Люкс: <span *ngIf="aeroflotLux">{{aeroflotLux}} &#8381;</span></td>
+    <td class="lc price" *ngIf="aeroflotLux">Люкс: {{aeroflotLux}} &#8381;</td>
   </tr>
   <tr>
     <td class="title">РЖД</td>
   </tr>
   <tr>
-    <td class="lc">Эконом: <span *ngIf="rgdClassEconomy">{{rgdClassEconomy}} &#8381;</span></td>
+    <td class="lc price" *ngIf="rgdClassEconomy">Эконом: {{rgdClassEconomy}} &#8381;</td>
   </tr>
   <tr>
-    <td class="lc">Продвинутый: <span *ngIf="rgdClassHigh">{{rgdClassHigh}} &#8381;</span></td>
+    <td class="lc price" *ngIf="rgdClassHigh">Продвинутый: {{rgdClassHigh}} &#8381;</td>
   </tr>
   <tr>
-    <td class="lc">Люкс: <span *ngIf="rgdClassLux">{{rgdClassLux}} &#8381;</span></td>
+    <td class="lc price" *ngIf="rgdClassLux">Люкс: {{rgdClassLux}} &#8381;</td>
   </tr>
 </table>
