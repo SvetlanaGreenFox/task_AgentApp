@@ -42,6 +42,6 @@ export class AeroflotHigh {
       price += countBaggage;
       return price;
     }
-    return price.toFixed(1);
+    return Math.round(price);
   }
 }

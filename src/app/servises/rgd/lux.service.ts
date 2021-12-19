@@ -38,6 +38,6 @@ export class RgdLux {
       price *= (1 - 20 / 100);
     }
 
-    return price.toFixed(1);
+    return Math.round(price);
   }
 }
