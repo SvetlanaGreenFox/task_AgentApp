@@ -11,7 +11,6 @@
 }
 
 .left-column {
-/* 	display: inline-block; */
   display: flex;
 	width: 400px;
 }

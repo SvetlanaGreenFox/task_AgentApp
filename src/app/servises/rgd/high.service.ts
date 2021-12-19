@@ -42,6 +42,6 @@ export class RgdHigh {
       price += (baggage - 19) * countBaggage;
     }
 
-    return price;
+    return price.toFixed(1);
   }
 }

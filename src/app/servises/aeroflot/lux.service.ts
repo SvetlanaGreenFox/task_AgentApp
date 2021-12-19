@@ -37,6 +37,6 @@ export class AeroflotLux {
       price *= (1 - 30 / 100);
     }
 
-    return price;
+    return price.toFixed(1);
   }
 }

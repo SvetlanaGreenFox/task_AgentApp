@@ -1,27 +1,29 @@
 table {
-  width: 100%; /* Ширина таблицы */
-  /* border: 1px solid rgb(220, 220, 220); Рамка вокруг таблицы */
-  color: white; /* Цвет текста */
+  width: 100%; 
+  color: white;
 margin-top: 15px;
  }
+
 td, th {
-  /* text-align: center; Выравнивание по центру */
-  padding: 8px; /* Поля вокруг текста */
+  padding: 8px;
   border: 1px solid rgb(220, 220, 220);
  }
+
 th {
-  color: white; /* Цвет текста */
+  color: white;
 }
  
-.lc { /* Стиль для первой колонки */
-  text-align: left; /* Выравнивание по левому краю */
-  color:black; /* Цвет текста */
+.lc { 
+  text-align: left; 
+  color:black;
  }
+
 .title,
 .options {
    font-weight: bold;
    color:black;
  }
+ 
 .title {
-background: rgb(245, 245, 245); /* Цвет фона */
+background: rgb(245, 245, 245);
 }
