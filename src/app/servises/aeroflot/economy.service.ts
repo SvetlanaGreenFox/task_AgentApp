@@ -27,15 +27,11 @@ export class AeroflotEconomy {
     const countKm = 4;
     const countBaggage = 4000;
 
-    if (baggage >= 20) {
+    if (baggage > 20) {
       return;
     }
 
     let price = distance * countKm;
-
-    // if (price === 0) {
-    //   return 'Проверьте расстояние';
-    // }
 
     if (baggage >= 5) {
       price += countBaggage;
@@ -43,5 +39,4 @@ export class AeroflotEconomy {
     }
     return price;
   }
-
 }

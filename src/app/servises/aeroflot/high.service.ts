@@ -28,7 +28,7 @@ export class AeroflotHigh {
     const countKm = 8;
     const countBaggage = 5000;
 
-    if (baggage >= 50) {
+    if (baggage > 50) {
       return;
     }
 

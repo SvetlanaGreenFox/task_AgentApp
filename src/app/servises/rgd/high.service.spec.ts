@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { HighService } from './high.service';
+import { RgdHigh } from './high.service';
 
-describe('HighService', () => {
-  let service: HighService;
+describe('RgdHigh', () => {
+  let service: RgdHigh;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(HighService);
+    service = TestBed.inject(RgdHigh);
   });
 
   it('should be created', () => {

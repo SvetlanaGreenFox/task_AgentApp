@@ -9,6 +9,9 @@ import { TransportersComponent } from './transporters/transporters.component';
 import { AeroflotEconomy } from './servises/aeroflot/economy.service';
 import { AeroflotHigh } from './servises/aeroflot/high.service';
 import { AeroflotLux } from './servises/aeroflot/lux.service';
+import { RgdEconomy } from './servises/rgd/economy.service';
+import { RgdHigh } from './servises/rgd/high.service';
+import { RgdLux } from './servises/rgd/lux.service';
 
 
 @NgModule({
@@ -22,7 +25,13 @@ import { AeroflotLux } from './servises/aeroflot/lux.service';
     AppRoutingModule,
     ReactiveFormsModule
   ],
-  providers: [AeroflotEconomy, AeroflotHigh, AeroflotLux],
+  providers: [
+    AeroflotEconomy,
+    AeroflotHigh,
+    AeroflotLux,
+    RgdEconomy,
+    RgdHigh,
+    RgdLux],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

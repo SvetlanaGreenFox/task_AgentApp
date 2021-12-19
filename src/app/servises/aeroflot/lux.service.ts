@@ -27,7 +27,7 @@ export class AeroflotLux {
     const age = Number(data.age);
     const countKm = 15;
 
-    if (baggage >= 50) {
+    if (baggage > 50) {
       return;
     }
 

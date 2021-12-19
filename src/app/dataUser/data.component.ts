@@ -4,6 +4,9 @@ import { DataForm } from '../models/dataform';
 import { AeroflotEconomy } from '../servises/aeroflot/economy.service';
 import { AeroflotHigh } from '../servises/aeroflot/high.service';
 import { AeroflotLux } from '../servises/aeroflot/lux.service';
+import { RgdEconomy } from '../servises/rgd/economy.service'
+import { RgdHigh } from '../servises/rgd/high.service';
+import { RgdLux } from '../servises/rgd/lux.service';
 
 
 @Component({
@@ -23,7 +26,10 @@ export class DataComponent {
   constructor(
     private aeroEconomy: AeroflotEconomy,
     private aeroHigh: AeroflotHigh,
-    private aeroLux: AeroflotLux) {
+    private aeroLux: AeroflotLux,
+    private rgdEconomy: RgdEconomy,
+    private rgdHigh: RgdHigh,
+    private rgdLux: RgdLux) {
 
   }
 
@@ -43,6 +49,9 @@ export class DataComponent {
     this.aeroEconomy.sendData(this.dataUser);
     this.aeroHigh.sendData(this.dataUser);
     this.aeroLux.sendData(this.dataUser);
+    this.rgdEconomy.sendData(this.dataUser);
+    this.rgdHigh.sendData(this.dataUser);
+    this.rgdLux.sendData(this.dataUser);
   }
 
 }

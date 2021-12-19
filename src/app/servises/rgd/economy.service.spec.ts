@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { EconomyService } from './economy.service';
+import { RgdEconomy } from './economy.service';
 
-describe('EconomyService', () => {
-  let service: EconomyService;
+describe('RgdEconomy', () => {
+  let service: RgdEconomy;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(EconomyService);
+    service = TestBed.inject(RgdEconomy);
   });
 
   it('should be created', () => {
