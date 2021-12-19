@@ -4,24 +4,24 @@
     <td class="title">Аэрофлот</td>
   </tr>
   <tr>
-    <td class="lc">Эконом: </td>
+    <td class="lc">Эконом: <span *ngIf="aeroflotEconom">{{aeroflotEconom}}</span></td>
   </tr>
   <tr>
-    <td class="lc">Продвинутый: </td>
+    <td class="lc">Продвинутый: <span *ngIf="aeroflotHigh">{{aeroflotHigh}}</span></td>
   </tr>
   <tr>
-    <td class="lc">Люкс: </td>
+    <td class="lc">Люкс: <span *ngIf="aeroflotLux">{{aeroflotLux}}</span></td>
   </tr>
   <tr>
     <td class="title">РЖД</td>
   </tr>
-  <tr>
-    <td class="lc">Эконом: </td>
+  <!-- <tr>
+    <td class="lc">Эконом: <span *ngIf="rgdEconom">{{rgdEconom}}</span></td>
   </tr>
   <tr>
-    <td class="lc">Продвинутый: </td>
+    <td class="lc">Продвинутый: <span *ngIf="rgdHigh">{{rgdHigh}}</span></td>
   </tr>
   <tr>
-    <td class="lc">Люкс: </td>
-  </tr>
+    <td class="lc">Люкс: <span *ngIf="rgdLux">{{rgdLux}}</span></td>
+  </tr> -->
 </table>

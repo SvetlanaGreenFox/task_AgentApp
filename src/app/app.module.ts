@@ -5,15 +5,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DataComponent } from './dataUser/data.component';
-import { ButtonComponent } from './button/button.component';
 import { TransportersComponent } from './transporters/transporters.component';
-import { DataService } from './data/data.service';
+import { AeroflotEconomy } from './servises/aeroflot/economy.service';
+import { AeroflotHigh } from './servises/aeroflot/high.service';
+import { AeroflotLux } from './servises/aeroflot/lux.service';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     DataComponent,
-    ButtonComponent,
     TransportersComponent
   ],
   imports: [
@@ -21,7 +22,7 @@ import { DataService } from './data/data.service';
     AppRoutingModule,
     ReactiveFormsModule
   ],
-  providers: [DataService],
+  providers: [AeroflotEconomy, AeroflotHigh, AeroflotLux],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

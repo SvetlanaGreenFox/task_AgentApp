@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
-import { DataService } from '../data/data.service';
+import { DataForm } from '../models/dataform';
+import { AeroflotEconomy } from '../servises/aeroflot/economy.service';
+import { AeroflotHigh } from '../servises/aeroflot/high.service';
+import { AeroflotLux } from '../servises/aeroflot/lux.service';
+
 
 @Component({
   selector: 'app-data',
@@ -10,13 +14,16 @@ import { DataService } from '../data/data.service';
 
 export class DataComponent {
 
-  dataUser: DataService = {
+  dataUser: DataForm = {
     distance: '',
     age: '',
     baggage: ''
   }
 
-  constructor() {
+  constructor(
+    private aeroEconomy: AeroflotEconomy,
+    private aeroHigh: AeroflotHigh,
+    private aeroLux: AeroflotLux) {
 
   }
 
@@ -32,6 +39,10 @@ export class DataComponent {
     this.dataUser.baggage = value;
   }
 
-
+  sendData() {
+    this.aeroEconomy.sendData(this.dataUser);
+    this.aeroHigh.sendData(this.dataUser);
+    this.aeroLux.sendData(this.dataUser);
+  }
 
 }
